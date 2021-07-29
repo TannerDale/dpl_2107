@@ -33,7 +33,7 @@ RSpec.describe Author do
       dpl.add_author(harper_lee)
 
       expect(dpl.authors).to eq([charlotte_bronte, harper_lee])
-      exoect(dpl.books).to eq([jane_eyre, professor, villette, mockingbird])
+      expect(dpl.books).to eq([jane_eyre, professor, villette, mockingbird])
     end
   end
 
