@@ -96,8 +96,8 @@ RSpec.describe Author do
 
     it 'cannot checkout an already checked out book' do
       dpl.checkout(jane_eyre)
-      result = dpl.checkout(jane_eyre)
 
+      result = dpl.checkout(jane_eyre)
       expect(result).to be(false)
       expect(dpl.checked_out_books).to eq([jane_eyre])
 
