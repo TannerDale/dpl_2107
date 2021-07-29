@@ -36,16 +36,16 @@ class Library
     false
   end
 
-  def return(book)
-    @checked_out_books.delete(book)
-  end
-
   def has_book?(book)
     @books.include?(book) && not_checked_out?(book)
   end
 
   def not_checked_out?(book)
     !@checked_out_books.include?(book)
+  end
+
+  def return(book)
+    @checked_out_books.delete(book)
   end
 
   def most_popular_book
