@@ -21,4 +21,16 @@ class Author
     @books << book
     book
   end
+
+  def first_book
+    @books.min_by do |book|
+      book.publication_year
+    end
+  end
+
+  def last_book
+    @books.max_by do |book|
+      book.publication_year
+    end
+  end
 end
