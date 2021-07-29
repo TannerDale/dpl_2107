@@ -13,5 +13,9 @@ RSpec.describe Book do
       expect(book.author).to eq("Harper Lee")
       expect(book.publication_year).to eq("1960")
     end
+
+    it 'can get a year from a date' do
+      expect(book.get_publication_year("July 11, 1960")).to eq("1960")
+    end
   end
 end
