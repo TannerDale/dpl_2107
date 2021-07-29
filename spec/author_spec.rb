@@ -27,5 +27,13 @@ RSpec.describe Author do
     it 'stores written books' do
       expect(charlotte_bronte.books).to eq([jane_eyre, villette])
     end
+
+    it 'has a first book' do
+      expect(charlotte_bronte.first_book).to eq(jane_eyre)
+    end
+
+    it 'has a last book' do
+      expect(charlotte_bronte.last_book).to eq(villette)
+    end
   end
 end
