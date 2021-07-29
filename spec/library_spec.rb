@@ -107,6 +107,10 @@ RSpec.describe Author do
     it 'knows if it has a book' do
       expect(dpl.has_book?(mockingbird)).to be(true)
     end
+
+    it 'knows if a book is not checked out' do
+      expect(dpl.not_checked_out?(mockingbird)).to be(true)
+    end
   end
 
   context 'most popular book' do
