@@ -103,6 +103,10 @@ RSpec.describe Author do
 
       dpl.return(jane_eyre)
     end
+
+    it 'knows if it has a book' do
+      expect(dpl.has_book?(mockingbird)).to be(true)
+    end
   end
 
   context 'most popular book' do
